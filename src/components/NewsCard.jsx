@@ -8,7 +8,7 @@ const NewsCard = ({singleNews}) => {
     const {thumbnail_url,  total_view,  rating, details, author, title} = singleNews;
   
     return (
-    <div className="p-4 card bg-base-100 shadow-xl">
+    <div className="p-4 card bg-base-100 rounded-none shadow-xl">
         {/* Author Information */}
         <div className="flex items-center mb-4">
           <img

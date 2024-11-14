@@ -7,7 +7,7 @@ const CategoryNews = () => {
     console.log(news);
     return (
         <div>
-            <h2 className="font-semibold">Dragon News Home</h2>
+            <h2 className="font-semibold mb-3">Dragon News Home</h2>
             <div>
                 {
                     news.map(singleNews => 
