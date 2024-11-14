@@ -2,6 +2,7 @@
 
 import { FaRegEye } from 'react-icons/fa';
 import { FaStar, FaShareAlt } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const NewsCard = ({singleNews}) => {
     const {thumbnail_url,  total_view,  rating, details, author, title} = singleNews;
@@ -31,7 +32,7 @@ const NewsCard = ({singleNews}) => {
       <div className="card-body">
         {/* Details */}
         <p className="text-sm text-gray-700">
-          {details.slice(0, 150)}... <span className="text-blue-500">Read More</span>
+          {details.slice(0, 150)}... <Link to={`/news/${singleNews._id}`} className="text-blue-500">Read More</Link>
         </p>
 
         {/* Footer */}
